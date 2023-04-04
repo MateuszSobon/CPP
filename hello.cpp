@@ -1,16 +1,24 @@
 #include <iostream>
-#include <vector>
-#include <string>
 
 using namespace std;
 
 int main()
 {
-    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
 
-    for (const string& word : msg)
+    int liczba;
+    cin >> liczba;
+
+    cout << "Dzielniki liczby " << liczba << ":" << endl;
+
+    for (int i=1;i<=liczba;i++ )
     {
-        cout << word << " ";
+        if(liczba%i==0)
+        {
+            cout << i << "; " ;
+        }
+
     }
+    int str;
+    
     cout << endl;
 }
